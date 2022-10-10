@@ -31,5 +31,5 @@ The second approach is the "arrays" method. The idea for this comes from my comp
   
   ------------------------------------------------------------------
   
-  There are definitely many ways to further improve the efficiency of this project, both big and small, and I am absolutely open to all suggestions! I would love to learn more about mkaing efficient and better algorithms, and please let me know of any ideas!
+  There are definitely many ways to further improve the efficiency of this project, both big and small, and I am absolutely open to all suggestions! I would love to learn more about mkaing efficient and better algorithms, and please let me know of any ideas! 
   

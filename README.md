@@ -3,7 +3,7 @@ A project testing two different algorithms to prove Goldbach's Conjecture up to 
 
 ------------------------------------------------------------------
 
-Goldbach's Conjecture is a unsolved mathematical problem which this project would attempt to disprove. It states that every even natural number greater than 2 can be expressed as the sum of two prime numbers.
+Goldbach's Conjecture is a unsolved mathematical problem which this project would attempt to disprove. It states that every even natural number greater than 2 can be expressed as the sum of two prime numbers. If any even number is not a sum of two prime numbers, then the conjecture would be proven false.  
 
 ex:
   4 = 2 + 2,
@@ -21,6 +21,8 @@ The first approach is the "loops" method. It iterates through hundreds of possib
   Given a maximum number, the algorithm iterates through each even number up to the maximum, starting at four. For each even number, a method call is made to getPrimeSum. Within getPrimeSum, a for loop iterates through odd numbers up to n, beginning at 3, and processes each number in two ways. First, it checks if the current number is prime. This check is done using another method, isPrime, which operates through repeated division up to the square root of the current number. If it is prime, it then checks if (n - current number) is prime, using the same method. When both conditions are met, getPrimeSum returns a string representation of the sum. 
 
   Summary: iterates manually through possible sums until it finds one in which both numbers are prime
+
+------------------------------------------------------------------
 
 The second approach is the "arrays" method. The idea for this comes from my computer science teacher, and I developed this on my own for fun during my senior year of high school. This method is significantly faster during runtime. 
 

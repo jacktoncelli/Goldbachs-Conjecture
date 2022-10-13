@@ -3,7 +3,7 @@ A project testing two different algorithms to prove Goldbach's Conjecture up to 
 
 ------------------------------------------------------------------
 
-**Goldbach's Conjecture** is a unsolved mathematical problem which this project would attempt to disprove. It states that every even natural number greater than 2 can be expressed as the sum of two prime numbers. If any even number is not a sum of two prime numbers, then the conjecture would be proven false.  
+[**Goldbach's Conjecture**](https://en.wikipedia.org/wiki/Goldbach%27s_conjecture) is a unsolved mathematical problem which this project would attempt to disprove. It states that every even natural number greater than 2 can be expressed as the sum of two prime numbers. If any even number is not a sum of two prime numbers, then the conjecture would be proven false.  
 
 ex:
    4 = 2 + 2,

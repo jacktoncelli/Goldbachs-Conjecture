@@ -36,9 +36,9 @@ The second approach is the **"arrays"** method. The idea for this comes from my 
   
 &nbsp;&nbsp;&nbsp;&nbsp;A StringBuilder is initialized in the driver function, and the constructer is set with a starting capacity. The capacity is an estimate of how many characters will be required total in the StringBuilder, and is based on how many digits in the maximum, as well as a few extra characters per line for '+', '=', and newline characters. 
 
-'''java
+```java
   StringBuilder builder = new StringBuilder(max * (((Integer.toString(max).length()-1)* 2) + 4));
-'''
+```
 
 Pre-allocating the expected capacity removes the need to update the memory allocation during runtime, which makes printing the data much faster.  
   

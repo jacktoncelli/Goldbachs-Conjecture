@@ -25,7 +25,15 @@ The first approach is the **"loops"** method. It iterates through hundreds of po
   }
 ```
 
-Within getPrimeSum, a for loop iterates through odd numbers up to n, beginning at 3, and processes each number in two ways. First, it checks if the current number is prime. This check is done using another method, isPrime, which operates through repeated division up to the square root of the current number. If it is prime, it then checks if (n - current number) is prime, using the same method. When both conditions are met, getPrimeSum returns a string representation of the sum.   
+&nbsp;&nbsp;&nbsp;&nbsp;Within getPrimeSum, a for loop iterates through odd numbers up to n, beginning at 3, and processes each number in two ways. First, it checks if the current number is prime. This check is done using another method, isPrime, which operates through repeated division up to the square root of the current number. If it is prime, it then checks if (n - current number) is prime, using the same method. 
+```java
+  for(int counter = 3; counter < n; couunter +=2){
+    if(isPrime(counter) && isPrime(n-counter))
+      return n + "=" + counter + "+" + (counter-n);
+    }
+```
+
+When both conditions are met, getPrimeSum returns a string representation of the sum.   
 
 **Summary: iterates manually through possible sums until it finds one in which both numbers are prime**
 

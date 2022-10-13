@@ -18,7 +18,14 @@ This project utilizes two different approaches to test this theory.
 
 The first approach is the **"loops"** method. It iterates through hundreds of possibilites to look for a prime sum, and is slower in runtime. I developed this algorithm myself for a class project junior year of high school, and it has since been updated and optimized. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;Given a maximum number, the algorithm iterates through each even number up to the maximum, starting at four. For each even number, a method call is made to getPrimeSum. Within getPrimeSum, a for loop iterates through odd numbers up to n, beginning at 3, and processes each number in two ways. First, it checks if the current number is prime. This check is done using another method, isPrime, which operates through repeated division up to the square root of the current number. If it is prime, it then checks if (n - current number) is prime, using the same method. When both conditions are met, getPrimeSum returns a string representation of the sum.   
+&nbsp;&nbsp;&nbsp;&nbsp;Given a maximum number, the algorithm iterates through each even number up to the maximum, starting at four. For each even number, a method call is made to getPrimeSum. 
+```java
+  for(int i = 4; i <= max; i+=2){
+    getPrimeSum(i);
+  }
+```
+
+Within getPrimeSum, a for loop iterates through odd numbers up to n, beginning at 3, and processes each number in two ways. First, it checks if the current number is prime. This check is done using another method, isPrime, which operates through repeated division up to the square root of the current number. If it is prime, it then checks if (n - current number) is prime, using the same method. When both conditions are met, getPrimeSum returns a string representation of the sum.   
 
 **Summary: iterates manually through possible sums until it finds one in which both numbers are prime**
 

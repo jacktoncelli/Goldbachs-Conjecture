@@ -30,7 +30,7 @@ The first approach is the **"loops"** method. It iterates through hundreds of po
   for(int counter = 3; counter < n; couunter +=2){
     if(isPrime(counter) && isPrime(n-counter))
       return n + "=" + counter + "+" + (counter-n);
-    }
+  }
 ```
 
 When both conditions are met, getPrimeSum returns a string representation of the sum.   

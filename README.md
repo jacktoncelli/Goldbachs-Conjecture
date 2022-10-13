@@ -28,7 +28,7 @@ The second approach is the **"arrays"** method. The idea for this comes from my 
 
    A public array of booleans is first initialized with length (max + 1). This array is named is_composite, and upon initilization, all the values are defaulted to false. A method call is made to fillPrimes, which utilizes the Sieve of Eratosthenes to test every number up to the max for primality. If a number is found to be composite, the value at that index in is_composite is changed to true. After fillPrimes is complete, the algorithm is very similar to the loops method. It iterates through every even number up to the maximum, starting at 4. For each even number, a method call to getPrimeSum2 is made. A for loop then iterates through every odd number, starting at 3, and up to n. For each odd number, it checks its primality by accessing the element at that index in is_composite. If the value is false, it checks the element at index (n - current number) within is_composite. If that value is also false, both conditions are met, and getPrimeSum2 returns a string representation of the sum. 
   
-**Summary: checks every number for primality first, then iterates through looking for a sum in which both numbers are prime **
+**Summary: checks every number for primality first, then iterates through looking for a sum in which both numbers are prime**
 
 ------------------------------------------------------------------
 

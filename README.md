@@ -28,8 +28,10 @@ The first approach is the **"loops"** method. It iterates through hundreds of po
 &nbsp;&nbsp;&nbsp;&nbsp;Within getPrimeSum, a for loop iterates through odd numbers up to n, beginning at 3, and processes each number in two ways. First, it checks if the current number is prime. This check is done using another method, isPrime, which operates through repeated division up to the square root of the current number. If it is prime, it then checks if (n - current number) is prime, using the same method. 
 ```java
   for(int counter = 3; counter < n; couunter +=2){
-    if(isPrime(counter) && isPrime(n-counter))
+    if(isPrime(counter) && isPrime(n-counter)){
+      //if both are found as prime, returns the sum
       return n + "=" + counter + "+" + (counter-n);
+    }
   }
 ```
 
@@ -57,8 +59,10 @@ A method call is made to fillPrimes, which utilizes the Sieve of Eratosthenes to
 After fillPrimes is complete, the algorithm is very similar to the loops method. It iterates through every even number up to the maximum, starting at 4. For each even number, a method call to getPrimeSum2 is made. A for loop then iterates through every odd number, starting at 3, and up to n. For each odd number, it checks its primality by accessing the element at that index in is_composite. If the value is false, it checks the element at index (n - current number) within is_composite. 
 ```java
   for(int counter = 3; counter < n; couunter +=2){
-    if(!is_composite[counter] && !is_composite[n-counter])
+    if(!is_composite[counter] && !is_composite[n-counter]){
+      //if both are false, returns the sum
       return n + "=" + counter + "+" + (counter-n);
+    }
   }
 ```
 
@@ -73,7 +77,7 @@ If both conditions are met, getPrimeSum2 returns a string representation of the 
 &nbsp;&nbsp;&nbsp;&nbsp;A StringBuilder is initialized in the driver function, and the constructer is set with a starting capacity. The capacity is an estimate of how many characters will be required total in the StringBuilder, and is based on how many digits in the maximum, as well as a few extra characters per line for '+', '=', and newline characters. 
 
 ```java
-  StringBuilder builder = new StringBuilder(max * (((Integer.toString(max).length()-1)* 2) + 4));
+  StringBuilder builder = new StringBuilder(max * (((Integer.toString(max).length())* 2) + 4));
 ```
 
 Pre-allocating the expected capacity removes the need to update the memory allocation during runtime, which makes printing the data much faster.  
@@ -82,5 +86,5 @@ Pre-allocating the expected capacity removes the need to update the memory alloc
   
 ------------------------------------------------------------------
   
-There are definitely many ways to further improve the efficiency of this project, both big and small, and I am absolutely open to all suggestions! I would love to learn more about mkaing efficient and better algorithms, and please let me know of any ideas! 
+There are definitely many ways to further improve the efficiency of this project, both big and small, and I am absolutely open to all suggestions! I would love to learn more about making efficient and better algorithms, and please let me know of any ideas! 
 

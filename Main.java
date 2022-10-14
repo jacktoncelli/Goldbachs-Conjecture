@@ -39,7 +39,7 @@ public class Main {
         is_composite = fillPrimes(max);
         //initilizes size of array, automatically assigns everything to false, then changes elements at prime indexes to true
 
-        StringBuilder builder = new StringBuilder(max * (((Integer.toString(max).length()-1)* 2) + 4));
+        StringBuilder builder = new StringBuilder(max * (((Integer.toString(max).length())* 2) + 4));
         //StringBuilder int constructor pre-allocates enough memory to fit all the lines into
         //doing this allows for it to not have to update the memory after initilization
 

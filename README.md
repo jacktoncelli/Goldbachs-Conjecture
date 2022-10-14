@@ -87,4 +87,3 @@ Pre-allocating the expected capacity removes the need to update the memory alloc
 ------------------------------------------------------------------
   
 There are definitely many ways to further improve the efficiency of this project, both big and small, and I am absolutely open to all suggestions! I would love to learn more about making efficient and better algorithms, and please let me know of any ideas! 
-
